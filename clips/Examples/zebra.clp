@@ -165,7 +165,7 @@
     "Chesterfields smoker lives next door to the fox owner.  The Lucky"      crlf
     "Strike smoker drinks orange juice.  The Japanese smokes Parliaments."   crlf
     "The horse owner lives next to the Kools smoker, whose house is yellow." crlf
-    "The Norwegian lives next to the blue house."			     t
+    "The Norwegian lives next to the blue house."			                 crlf
     crlf
     "Now, who drinks water?  And who owns the zebra?" crlf crlf)
    (assert (value color red) 

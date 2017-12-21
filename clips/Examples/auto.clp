@@ -5,7 +5,7 @@
 ;;;     This expert system diagnoses some simple
 ;;;     problems with a car.
 ;;;
-;;;     CLIPS Version 6.0 Example
+;;;     CLIPS Version 6.3 Example
 ;;;
 ;;;     To execute, merely load, reset and run.
 ;;;======================================================
@@ -29,140 +29,153 @@
 (deffunction yes-or-no-p (?question)
    (bind ?response (ask-question ?question yes no y n))
    (if (or (eq ?response yes) (eq ?response y))
-       then TRUE 
-       else FALSE))
-
-;;;**********************
-;;;* ENGINE STATE RULES *
-;;;**********************
-
-(defrule normal-engine-state-conclusions ""
-   (declare (salience 10))
-   (working-state engine normal)
-   =>
-   (assert (repair "No repair needed."))
-   (assert (spark-state engine normal))
-   (assert (charge-state battery charged))
-   (assert (rotation-state engine rotates)))
-
-(defrule unsatisfactory-engine-state-conclusions ""
-   (declare (salience 10))
-   (working-state engine unsatisfactory)
-   =>
-   (assert (charge-state battery charged))
-   (assert (rotation-state engine rotates)))
+       then yes 
+       else no))
 
 ;;;***************
 ;;;* QUERY RULES *
 ;;;***************
 
 (defrule determine-engine-state ""
-   (not (working-state engine ?))
+   (not (engine-starts ?))
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Does the engine start (yes/no)? ") 
-       then 
-       (if (yes-or-no-p "Does the engine run normally (yes/no)? ")
-           then (assert (working-state engine normal))
-           else (assert (working-state engine unsatisfactory)))
-       else 
-       (assert (working-state engine does-not-start))))
+   (assert (engine-starts (yes-or-no-p "Does the engine start (yes/no)? "))))
+   
+(defrule determine-runs-normally ""
+   (engine-starts yes)
+   (not (repair ?))
+   =>
+   (assert (runs-normally (yes-or-no-p "Does the engine run normally (yes/no)? "))))
 
 (defrule determine-rotation-state ""
-   (working-state engine does-not-start)
-   (not (rotation-state engine ?))
+   (engine-starts no)
    (not (repair ?))   
    =>
-   (if (yes-or-no-p "Does the engine rotate (yes/no)? ")
-       then
-       (assert (rotation-state engine rotates))
-       (assert (spark-state engine irregular-spark))
-       else
-       (assert (rotation-state engine does-not-rotate))       
-       (assert (spark-state engine does-not-spark))))
-
+   (assert (engine-rotates (yes-or-no-p "Does the engine rotate (yes/no)? "))))
+   
 (defrule determine-sluggishness ""
-   (working-state engine unsatisfactory)
+   (runs-normally no)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Is the engine sluggish (yes/no)? ")
-       then (assert (repair "Clean the fuel line."))))
-
+   (assert (engine-sluggish (yes-or-no-p "Is the engine sluggish (yes/no)? "))))
+   
 (defrule determine-misfiring ""
-   (working-state engine unsatisfactory)
+   (runs-normally no)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Does the engine misfire (yes/no)? ")
-       then
-       (assert (repair "Point gap adjustment."))       
-       (assert (spark-state engine irregular-spark)))) 
+   (assert (engine-misfires (yes-or-no-p "Does the engine misfire (yes/no)? "))))
 
 (defrule determine-knocking ""
-   (working-state engine unsatisfactory)
+   (runs-normally no)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Does the engine knock (yes/no)? ")
-       then
-       (assert (repair "Timing adjustment."))))
+   (assert (engine-knocks (yes-or-no-p "Does the engine knock (yes/no)? "))))
 
 (defrule determine-low-output ""
-   (working-state engine unsatisfactory)
-   (not (symptom engine low-output | not-low-output))
+   (runs-normally no)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Is the output of the engine low (yes/no)? ")
-       then
-       (assert (symptom engine low-output))
-       else
-       (assert (symptom engine not-low-output))))
+   (assert (engine-output-low
+               (yes-or-no-p "Is the output of the engine low (yes/no)? "))))
 
 (defrule determine-gas-level ""
-   (working-state engine does-not-start)
-   (rotation-state engine rotates)
+   (engine-starts no)
+   (engine-rotates yes)
    (not (repair ?))
    =>
-   (if (not (yes-or-no-p "Does the tank have any gas in it (yes/no)? "))
-       then
-       (assert (repair "Add gas."))))
+   (assert (tank-has-gas
+              (yes-or-no-p "Does the tank have any gas in it (yes/no)? "))))
 
 (defrule determine-battery-state ""
-   (rotation-state engine does-not-rotate)
-   (not (charge-state battery ?))
+   (engine-rotates no)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Is the battery charged (yes/no)? ")
-       then
-       (assert (charge-state battery charged))
-       else
-       (assert (repair "Charge the battery."))
-       (assert (charge-state battery dead))))  
+   (assert (battery-has-charge
+              (yes-or-no-p "Is the battery charged (yes/no)? "))))
 
 (defrule determine-point-surface-state ""
-   (or (and (working-state engine does-not-start)      
-            (spark-state engine irregular-spark))
-       (symptom engine low-output))
+   (or (and (engine-starts no)      
+            (engine-rotates yes))
+       (engine-output-low yes))
    (not (repair ?))
    =>
-   (bind ?response 
+   (assert (point-surface-state
       (ask-question "What is the surface state of the points (normal/burned/contaminated)? "
-                    normal burned contaminated))
-   (if (eq ?response burned) 
-       then 
-      (assert (repair "Replace the points."))
-       else (if (eq ?response contaminated)
-                then (assert (repair "Clean the points.")))))
+                    normal burned contaminated))))
 
 (defrule determine-conductivity-test ""
-   (working-state engine does-not-start)      
-   (spark-state engine does-not-spark)
-   (charge-state battery charged)
+   (engine-starts no)      
+   (engine-rotates no)
+   (battery-has-charge yes)
    (not (repair ?))
    =>
-   (if (yes-or-no-p "Is the conductivity test for the ignition coil positive (yes/no)? ")
-       then
-       (assert (repair "Repair the distributor lead wire."))
-       else
-       (assert (repair "Replace the ignition coil."))))
+   (assert (conductivity-test-positive
+              (yes-or-no-p "Is the conductivity test for the ignition coil positive (yes/no)? "))))
+
+;;;****************
+;;;* REPAIR RULES *
+;;;****************
+
+(defrule normal-engine-state-conclusions ""
+   (runs-normally yes)
+   (not (repair ?))
+   =>
+   (assert (repair "No repair needed.")))
+
+(defrule engine-sluggish ""
+   (engine-sluggish yes)
+   (not (repair ?))
+   =>
+   (assert (repair "Clean the fuel line."))) 
+
+(defrule engine-misfires ""
+   (engine-misfires yes)
+   (not (repair ?))
+   =>
+   (assert (repair "Point gap adjustment.")))     
+
+(defrule engine-knocks ""
+   (engine-knocks yes)
+   (not (repair ?))
+   =>
+   (assert (repair "Timing adjustment.")))
+
+(defrule tank-out-of-gas ""
+   (tank-has-gas no)
+   (not (repair ?))
+   =>
+   (assert (repair "Add gas.")))
+
+(defrule battery-dead ""
+   (battery-has-charge no)
+   (not (repair ?))
+   =>
+   (assert (repair "Charge the battery.")))
+
+(defrule point-surface-state-burned ""
+   (point-surface-state burned)
+   (not (repair ?))
+   =>
+   (assert (repair "Replace the points.")))
+
+(defrule point-surface-state-contaminated ""
+   (point-surface-state contaminated)
+   (not (repair ?))
+   =>
+   (assert (repair "Clean the points.")))
+
+(defrule conductivity-test-positive-yes ""
+   (conductivity-test-positive yes)
+   (not (repair ?))
+   =>
+   (assert (repair "Repair the distributor lead wire.")))
+
+(defrule conductivity-test-positive-no ""
+   (conductivity-test-positive no)
+   (not (repair ?))
+   =>
+   (assert (repair "Replace the ignition coil.")))
 
 (defrule no-repairs ""
   (declare (salience -10))
@@ -170,9 +183,9 @@
   =>
   (assert (repair "Take your car to a mechanic.")))
 
-;;;****************************
-;;;* STARTUP AND REPAIR RULES *
-;;;****************************
+;;;********************************
+;;;* STARTUP AND CONCLUSION RULES *
+;;;********************************
 
 (defrule system-banner ""
   (declare (salience 10))
