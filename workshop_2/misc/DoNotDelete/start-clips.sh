@@ -6,7 +6,7 @@ echo 'copy  : Control + Insert'
 echo 'paste : Shift   + Insert'
 echo -----------------------------------------------
 echo 'Try an example:'
-echo '(load ./workshop/Examples/animal.clp)'
+echo '(load ./workshop/animal.clp)'
 echo '(reset)'
 echo '(run)'
 echo '(exit)'

@@ -2,6 +2,7 @@
 Version=1.0 
 Comment=This is launcher 
 Exec=/home/iss-user/.DoNotDelete/start-jupyter.sh
+Icon=/home/iss-user/.DoNotDelete/png-jupyter.png
 Terminal=true 
 Type=Application
-Name[en_SG]=start-jupyter
+Name[en_SG]=Jupyter
