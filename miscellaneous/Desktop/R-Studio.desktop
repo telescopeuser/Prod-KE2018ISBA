@@ -6,4 +6,4 @@ Exec=rstudio
 Icon=/home/iss-user/.DoNotDelete/ico-RStudio.ico
 Terminal=false
 Type=Application
-Name[en_SG]=R-Studio
+Name[en_US]=R-Studio

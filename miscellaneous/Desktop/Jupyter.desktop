@@ -5,4 +5,4 @@ Exec=/home/iss-user/.DoNotDelete/start-jupyter.sh
 Icon=/home/iss-user/.DoNotDelete/png-jupyter.png
 Terminal=true 
 Type=Application
-Name[en_SG]=Jupyter
+Name[en_US]=Jupyter
