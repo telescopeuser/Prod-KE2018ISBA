@@ -1,6 +1,3 @@
-
-# KE2018ISBA
-
 ### 顾 瞻 GU Zhan (Sam)
 
 zhan.gu@nus.edu.sg
