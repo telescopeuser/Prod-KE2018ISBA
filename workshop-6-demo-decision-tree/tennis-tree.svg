@@ -1,0 +1,98 @@
+
+<svg height="433pt" viewBox="0.00 0.00 300.00 433.00" width="300pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 429)">
+<title>Tree</title>
+<polygon fill="white" points="-4,4 -4,-429 296,-429 296,4 -4,4" stroke="none"/>
+<!-- 0 -->
+<g class="node" id="node1"><title>0</title>
+<path d="M223.5,-425C223.5,-425 136.5,-425 136.5,-425 130.5,-425 124.5,-419 124.5,-413 124.5,-413 124.5,-354 124.5,-354 124.5,-348 130.5,-342 136.5,-342 136.5,-342 223.5,-342 223.5,-342 229.5,-342 235.5,-348 235.5,-354 235.5,-354 235.5,-413 235.5,-413 235.5,-419 229.5,-425 223.5,-425" fill="#399de5" fill-opacity="0.498039" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="136" y="-409.8">Humidity ≤ 0.5</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="132.5" y="-394.8">entropy = 0.918</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="142.5" y="-379.8">samples = 9</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="140.5" y="-364.8">value = [3, 6]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="143.5" y="-349.8">class = Play</text>
+</g>
+<!-- 1 -->
+<g class="node" id="node2"><title>1</title>
+<path d="M162.5,-306C162.5,-306 75.5,-306 75.5,-306 69.5,-306 63.5,-300 63.5,-294 63.5,-294 63.5,-235 63.5,-235 63.5,-229 69.5,-223 75.5,-223 75.5,-223 162.5,-223 162.5,-223 168.5,-223 174.5,-229 174.5,-235 174.5,-235 174.5,-294 174.5,-294 174.5,-300 168.5,-306 162.5,-306" fill="#e58139" fill-opacity="0.333333" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="78" y="-290.8">Outlook ≤ 0.5</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="71.5" y="-275.8">entropy = 0.971</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="81.5" y="-260.8">samples = 5</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="79.5" y="-245.8">value = [3, 2]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="72" y="-230.8">class = No Play</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g class="edge" id="edge1"><title>0-&gt;1</title>
+<path d="M158.836,-341.907C154.294,-333.195 149.446,-323.897 144.752,-314.893" fill="none" stroke="black"/>
+<polygon fill="black" points="147.853,-313.27 140.126,-306.021 141.646,-316.506 147.853,-313.27" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="132.624" y="-326.168">True</text>
+</g>
+<!-- 6 -->
+<g class="node" id="node7"><title>6</title>
+<path d="M277,-298.5C277,-298.5 205,-298.5 205,-298.5 199,-298.5 193,-292.5 193,-286.5 193,-286.5 193,-242.5 193,-242.5 193,-236.5 199,-230.5 205,-230.5 205,-230.5 277,-230.5 277,-230.5 283,-230.5 289,-236.5 289,-242.5 289,-242.5 289,-286.5 289,-286.5 289,-292.5 283,-298.5 277,-298.5" fill="#399de5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="201" y="-283.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="203.5" y="-268.3">samples = 4</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="201.5" y="-253.3">value = [0, 4]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="204.5" y="-238.3">class = Play</text>
+</g>
+<!-- 0&#45;&gt;6 -->
+<g class="edge" id="edge6"><title>0-&gt;6</title>
+<path d="M201.164,-341.907C206.917,-330.873 213.16,-318.898 218.96,-307.773" fill="none" stroke="black"/>
+<polygon fill="black" points="222.188,-309.152 223.708,-298.667 215.981,-305.916 222.188,-309.152" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="231.21" y="-318.815">False</text>
+</g>
+<!-- 2 -->
+<g class="node" id="node3"><title>2</title>
+<path d="M98,-179.5C98,-179.5 12,-179.5 12,-179.5 6,-179.5 0,-173.5 0,-167.5 0,-167.5 0,-123.5 0,-123.5 0,-117.5 6,-111.5 12,-111.5 12,-111.5 98,-111.5 98,-111.5 104,-111.5 110,-117.5 110,-123.5 110,-123.5 110,-167.5 110,-167.5 110,-173.5 104,-179.5 98,-179.5" fill="#e58139" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="15" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="17.5" y="-149.3">samples = 2</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="15.5" y="-134.3">value = [2, 0]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="8" y="-119.3">class = No Play</text>
+</g>
+<!-- 1&#45;&gt;2 -->
+<g class="edge" id="edge2"><title>1-&gt;2</title>
+<path d="M96.7955,-222.907C90.7596,-211.873 84.209,-199.898 78.1235,-188.773" fill="none" stroke="black"/>
+<polygon fill="black" points="81.0123,-186.76 73.1426,-179.667 74.871,-190.12 81.0123,-186.76" stroke="black"/>
+</g>
+<!-- 3 -->
+<g class="node" id="node4"><title>3</title>
+<path d="M227.5,-187C227.5,-187 140.5,-187 140.5,-187 134.5,-187 128.5,-181 128.5,-175 128.5,-175 128.5,-116 128.5,-116 128.5,-110 134.5,-104 140.5,-104 140.5,-104 227.5,-104 227.5,-104 233.5,-104 239.5,-110 239.5,-116 239.5,-116 239.5,-175 239.5,-175 239.5,-181 233.5,-187 227.5,-187" fill="#399de5" fill-opacity="0.498039" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="150.5" y="-171.8">Wind ≤ 0.5</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="136.5" y="-156.8">entropy = 0.918</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="146.5" y="-141.8">samples = 3</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="144.5" y="-126.8">value = [1, 2]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="147.5" y="-111.8">class = Play</text>
+</g>
+<!-- 1&#45;&gt;3 -->
+<g class="edge" id="edge3"><title>1-&gt;3</title>
+<path d="M141.551,-222.907C146.391,-214.195 151.557,-204.897 156.559,-195.893" fill="none" stroke="black"/>
+<polygon fill="black" points="159.692,-197.462 161.488,-187.021 153.572,-194.063 159.692,-197.462" stroke="black"/>
+</g>
+<!-- 4 -->
+<g class="node" id="node5"><title>4</title>
+<path d="M166,-68C166,-68 80,-68 80,-68 74,-68 68,-62 68,-56 68,-56 68,-12 68,-12 68,-6 74,-0 80,-0 80,-0 166,-0 166,-0 172,-0 178,-6 178,-12 178,-12 178,-56 178,-56 178,-62 172,-68 166,-68" fill="none" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="83" y="-52.8">entropy = 1.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="85.5" y="-37.8">samples = 2</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="83.5" y="-22.8">value = [1, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="76" y="-7.8">class = No Play</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g class="edge" id="edge4"><title>3-&gt;4</title>
+<path d="M161.286,-103.726C156.459,-95.0615 151.353,-85.8962 146.498,-77.1802" fill="none" stroke="black"/>
+<polygon fill="black" points="149.475,-75.3322 141.55,-68.2996 143.36,-78.7389 149.475,-75.3322" stroke="black"/>
+</g>
+<!-- 5 -->
+<g class="node" id="node6"><title>5</title>
+<path d="M280,-68C280,-68 208,-68 208,-68 202,-68 196,-62 196,-56 196,-56 196,-12 196,-12 196,-6 202,-0 208,-0 208,-0 280,-0 280,-0 286,-0 292,-6 292,-12 292,-12 292,-56 292,-56 292,-62 286,-68 280,-68" fill="#399de5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="204" y="-52.8">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="206.5" y="-37.8">samples = 1</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="204.5" y="-22.8">value = [0, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="207.5" y="-7.8">class = Play</text>
+</g>
+<!-- 3&#45;&gt;5 -->
+<g class="edge" id="edge5"><title>3-&gt;5</title>
+<path d="M206.342,-103.726C211.09,-95.0615 216.112,-85.8962 220.888,-77.1802" fill="none" stroke="black"/>
+<polygon fill="black" points="224.018,-78.7513 225.754,-68.2996 217.879,-75.3875 224.018,-78.7513" stroke="black"/>
+</g>
+</g>
+</svg>

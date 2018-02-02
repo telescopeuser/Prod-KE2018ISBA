@@ -1,0 +1,233 @@
+
+<svg height="671pt" viewBox="0.00 0.00 942.00 671.00" width="942pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 667)">
+<title>Tree</title>
+<polygon fill="white" points="-4,4 -4,-667 938,-667 938,4 -4,4" stroke="none"/>
+<!-- 0 -->
+<g class="node" id="node1"><title>0</title>
+<path d="M565,-663C565,-663 450,-663 450,-663 444,-663 438,-657 438,-651 438,-651 438,-592 438,-592 438,-586 444,-580 450,-580 450,-580 565,-580 565,-580 571,-580 577,-586 577,-592 577,-592 577,-651 577,-651 577,-657 571,-663 565,-663" fill="#e58139" fill-opacity="0.058824" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="446" y="-647.8">PetalWidthCm ≤ 0.8</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="460" y="-632.8">entropy = 1.573</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="462.5" y="-617.8">samples = 105</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="449.5" y="-602.8">value = [40, 36, 29]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="453" y="-587.8">class = Iris-setosa</text>
+</g>
+<!-- 1 -->
+<g class="node" id="node2"><title>1</title>
+<path d="M481,-536.5C481,-536.5 380,-536.5 380,-536.5 374,-536.5 368,-530.5 368,-524.5 368,-524.5 368,-480.5 368,-480.5 368,-474.5 374,-468.5 380,-468.5 380,-468.5 481,-468.5 481,-468.5 487,-468.5 493,-474.5 493,-480.5 493,-480.5 493,-524.5 493,-524.5 493,-530.5 487,-536.5 481,-536.5" fill="#e58139" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="390.5" y="-521.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="389.5" y="-506.3">samples = 40</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="380" y="-491.3">value = [40, 0, 0]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="376" y="-476.3">class = Iris-setosa</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g class="edge" id="edge1"><title>0-&gt;1</title>
+<path d="M480.785,-579.907C473.378,-568.652 465.327,-556.418 457.882,-545.106" fill="none" stroke="black"/>
+<polygon fill="black" points="460.749,-543.096 452.328,-536.667 454.902,-546.944 460.749,-543.096" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="447.279" y="-557.452">True</text>
+</g>
+<!-- 2 -->
+<g class="node" id="node3"><title>2</title>
+<path d="M645.5,-544C645.5,-544 523.5,-544 523.5,-544 517.5,-544 511.5,-538 511.5,-532 511.5,-532 511.5,-473 511.5,-473 511.5,-467 517.5,-461 523.5,-461 523.5,-461 645.5,-461 645.5,-461 651.5,-461 657.5,-467 657.5,-473 657.5,-473 657.5,-532 657.5,-532 657.5,-538 651.5,-544 645.5,-544" fill="#39e581" fill-opacity="0.196078" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="519.5" y="-528.8">PetalWidthCm ≤ 1.75</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="537" y="-513.8">entropy = 0.992</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="543.5" y="-498.8">samples = 65</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="530" y="-483.8">value = [0, 36, 29]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="521" y="-468.8">class = Iris-versicolor</text>
+</g>
+<!-- 0&#45;&gt;2 -->
+<g class="edge" id="edge2"><title>0-&gt;2</title>
+<path d="M534.215,-579.907C540.008,-571.105 546.195,-561.703 552.178,-552.612" fill="none" stroke="black"/>
+<polygon fill="black" points="555.259,-554.298 557.832,-544.021 549.411,-550.45 555.259,-554.298" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="562.881" y="-564.806">False</text>
+</g>
+<!-- 3 -->
+<g class="node" id="node4"><title>3</title>
+<path d="M528.5,-425C528.5,-425 400.5,-425 400.5,-425 394.5,-425 388.5,-419 388.5,-413 388.5,-413 388.5,-354 388.5,-354 388.5,-348 394.5,-342 400.5,-342 400.5,-342 528.5,-342 528.5,-342 534.5,-342 540.5,-348 540.5,-354 540.5,-354 540.5,-413 540.5,-413 540.5,-419 534.5,-425 528.5,-425" fill="#39e581" fill-opacity="0.858824" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="396.5" y="-409.8">PetalLengthCm ≤ 4.95</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="417" y="-394.8">entropy = 0.544</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="423.5" y="-379.8">samples = 40</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="414" y="-364.8">value = [0, 35, 5]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="401" y="-349.8">class = Iris-versicolor</text>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g class="edge" id="edge3"><title>2-&gt;3</title>
+<path d="M542.867,-460.907C533.373,-451.651 523.2,-441.732 513.432,-432.209" fill="none" stroke="black"/>
+<polygon fill="black" points="515.663,-429.496 506.06,-425.021 510.776,-434.508 515.663,-429.496" stroke="black"/>
+</g>
+<!-- 12 -->
+<g class="node" id="node13"><title>12</title>
+<path d="M769.5,-425C769.5,-425 641.5,-425 641.5,-425 635.5,-425 629.5,-419 629.5,-413 629.5,-413 629.5,-354 629.5,-354 629.5,-348 635.5,-342 641.5,-342 641.5,-342 769.5,-342 769.5,-342 775.5,-342 781.5,-348 781.5,-354 781.5,-354 781.5,-413 781.5,-413 781.5,-419 775.5,-425 769.5,-425" fill="#8139e5" fill-opacity="0.956863" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="637.5" y="-409.8">PetalLengthCm ≤ 4.85</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="658" y="-394.8">entropy = 0.242</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="664.5" y="-379.8">samples = 25</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="655" y="-364.8">value = [0, 1, 24]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="646" y="-349.8">class = Iris-virginica</text>
+</g>
+<!-- 2&#45;&gt;12 -->
+<g class="edge" id="edge12"><title>2-&gt;12</title>
+<path d="M626.48,-460.907C636.053,-451.651 646.311,-441.732 656.16,-432.209" fill="none" stroke="black"/>
+<polygon fill="black" points="658.838,-434.488 663.594,-425.021 653.972,-429.456 658.838,-434.488" stroke="black"/>
+</g>
+<!-- 4 -->
+<g class="node" id="node5"><title>4</title>
+<path d="M290.5,-306C290.5,-306 158.5,-306 158.5,-306 152.5,-306 146.5,-300 146.5,-294 146.5,-294 146.5,-235 146.5,-235 146.5,-229 152.5,-223 158.5,-223 158.5,-223 290.5,-223 290.5,-223 296.5,-223 302.5,-229 302.5,-235 302.5,-235 302.5,-294 302.5,-294 302.5,-300 296.5,-306 290.5,-306" fill="#39e581" fill-opacity="0.968627" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="154.5" y="-290.8">SepalLengthCm ≤ 4.95</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="177" y="-275.8">entropy = 0.191</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="183.5" y="-260.8">samples = 34</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="174" y="-245.8">value = [0, 33, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="161" y="-230.8">class = Iris-versicolor</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g class="edge" id="edge4"><title>3-&gt;4</title>
+<path d="M388.233,-345.32C363.906,-333.46 336.802,-320.247 311.758,-308.038" fill="none" stroke="black"/>
+<polygon fill="black" points="313.155,-304.826 302.633,-303.59 310.088,-311.118 313.155,-304.826" stroke="black"/>
+</g>
+<!-- 7 -->
+<g class="node" id="node8"><title>7</title>
+<path d="M525.5,-306C525.5,-306 403.5,-306 403.5,-306 397.5,-306 391.5,-300 391.5,-294 391.5,-294 391.5,-235 391.5,-235 391.5,-229 397.5,-223 403.5,-223 403.5,-223 525.5,-223 525.5,-223 531.5,-223 537.5,-229 537.5,-235 537.5,-235 537.5,-294 537.5,-294 537.5,-300 531.5,-306 525.5,-306" fill="#8139e5" fill-opacity="0.498039" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="399.5" y="-290.8">PetalWidthCm ≤ 1.55</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="417" y="-275.8">entropy = 0.918</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="427" y="-260.8">samples = 6</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="417.5" y="-245.8">value = [0, 2, 4]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="405" y="-230.8">class = Iris-virginica</text>
+</g>
+<!-- 3&#45;&gt;7 -->
+<g class="edge" id="edge7"><title>3-&gt;7</title>
+<path d="M464.5,-341.907C464.5,-333.649 464.5,-324.864 464.5,-316.302" fill="none" stroke="black"/>
+<polygon fill="black" points="468,-316.021 464.5,-306.021 461,-316.021 468,-316.021" stroke="black"/>
+</g>
+<!-- 5 -->
+<g class="node" id="node6"><title>5</title>
+<path d="M123,-179.5C123,-179.5 12,-179.5 12,-179.5 6,-179.5 0,-173.5 0,-167.5 0,-167.5 0,-123.5 0,-123.5 0,-117.5 6,-111.5 12,-111.5 12,-111.5 123,-111.5 123,-111.5 129,-111.5 135,-117.5 135,-123.5 135,-123.5 135,-167.5 135,-167.5 135,-173.5 129,-179.5 123,-179.5" fill="#8139e5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="27.5" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="30" y="-149.3">samples = 1</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="20.5" y="-134.3">value = [0, 0, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="8" y="-119.3">class = Iris-virginica</text>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g class="edge" id="edge5"><title>4-&gt;5</title>
+<path d="M170.03,-222.907C153.89,-210.88 136.251,-197.735 120.224,-185.791" fill="none" stroke="black"/>
+<polygon fill="black" points="122.116,-182.836 112.006,-179.667 117.933,-188.449 122.116,-182.836" stroke="black"/>
+</g>
+<!-- 6 -->
+<g class="node" id="node7"><title>6</title>
+<path d="M284,-179.5C284,-179.5 165,-179.5 165,-179.5 159,-179.5 153,-173.5 153,-167.5 153,-167.5 153,-123.5 153,-123.5 153,-117.5 159,-111.5 165,-111.5 165,-111.5 284,-111.5 284,-111.5 290,-111.5 296,-117.5 296,-123.5 296,-123.5 296,-167.5 296,-167.5 296,-173.5 290,-179.5 284,-179.5" fill="#39e581" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="184.5" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="183.5" y="-149.3">samples = 33</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="174" y="-134.3">value = [0, 33, 0]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="161" y="-119.3">class = Iris-versicolor</text>
+</g>
+<!-- 4&#45;&gt;6 -->
+<g class="edge" id="edge6"><title>4-&gt;6</title>
+<path d="M224.5,-222.907C224.5,-212.204 224.5,-200.615 224.5,-189.776" fill="none" stroke="black"/>
+<polygon fill="black" points="228,-189.667 224.5,-179.667 221,-189.667 228,-189.667" stroke="black"/>
+</g>
+<!-- 8 -->
+<g class="node" id="node9"><title>8</title>
+<path d="M437,-179.5C437,-179.5 326,-179.5 326,-179.5 320,-179.5 314,-173.5 314,-167.5 314,-167.5 314,-123.5 314,-123.5 314,-117.5 320,-111.5 326,-111.5 326,-111.5 437,-111.5 437,-111.5 443,-111.5 449,-117.5 449,-123.5 449,-123.5 449,-167.5 449,-167.5 449,-173.5 443,-179.5 437,-179.5" fill="#8139e5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="341.5" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="344" y="-149.3">samples = 3</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="334.5" y="-134.3">value = [0, 0, 3]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="322" y="-119.3">class = Iris-virginica</text>
+</g>
+<!-- 7&#45;&gt;8 -->
+<g class="edge" id="edge8"><title>7-&gt;8</title>
+<path d="M435.704,-222.907C427.719,-211.652 419.04,-199.418 411.016,-188.106" fill="none" stroke="black"/>
+<polygon fill="black" points="413.669,-185.798 405.029,-179.667 407.96,-189.848 413.669,-185.798" stroke="black"/>
+</g>
+<!-- 9 -->
+<g class="node" id="node10"><title>9</title>
+<path d="M607.5,-187C607.5,-187 479.5,-187 479.5,-187 473.5,-187 467.5,-181 467.5,-175 467.5,-175 467.5,-116 467.5,-116 467.5,-110 473.5,-104 479.5,-104 479.5,-104 607.5,-104 607.5,-104 613.5,-104 619.5,-110 619.5,-116 619.5,-116 619.5,-175 619.5,-175 619.5,-181 613.5,-187 607.5,-187" fill="#39e581" fill-opacity="0.498039" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="475.5" y="-171.8">PetalLengthCm ≤ 5.45</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="496" y="-156.8">entropy = 0.918</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="506" y="-141.8">samples = 3</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="496.5" y="-126.8">value = [0, 2, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="480" y="-111.8">class = Iris-versicolor</text>
+</g>
+<!-- 7&#45;&gt;9 -->
+<g class="edge" id="edge9"><title>7-&gt;9</title>
+<path d="M491.909,-222.907C497.914,-214.014 504.331,-204.509 510.529,-195.331" fill="none" stroke="black"/>
+<polygon fill="black" points="513.444,-197.267 516.14,-187.021 507.643,-193.35 513.444,-197.267" stroke="black"/>
+</g>
+<!-- 10 -->
+<g class="node" id="node11"><title>10</title>
+<path d="M524,-68C524,-68 405,-68 405,-68 399,-68 393,-62 393,-56 393,-56 393,-12 393,-12 393,-6 399,-0 405,-0 405,-0 524,-0 524,-0 530,-0 536,-6 536,-12 536,-12 536,-56 536,-56 536,-62 530,-68 524,-68" fill="#39e581" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="424.5" y="-52.8">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="427" y="-37.8">samples = 2</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="417.5" y="-22.8">value = [0, 2, 0]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="401" y="-7.8">class = Iris-versicolor</text>
+</g>
+<!-- 9&#45;&gt;10 -->
+<g class="edge" id="edge10"><title>9-&gt;10</title>
+<path d="M514.083,-103.726C507.7,-94.879 500.941,-85.51 494.535,-76.6303" fill="none" stroke="black"/>
+<polygon fill="black" points="497.214,-74.3615 488.524,-68.2996 491.537,-78.4571 497.214,-74.3615" stroke="black"/>
+</g>
+<!-- 11 -->
+<g class="node" id="node12"><title>11</title>
+<path d="M677,-68C677,-68 566,-68 566,-68 560,-68 554,-62 554,-56 554,-56 554,-12 554,-12 554,-6 560,-0 566,-0 566,-0 677,-0 677,-0 683,-0 689,-6 689,-12 689,-12 689,-56 689,-56 689,-62 683,-68 677,-68" fill="#8139e5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="581.5" y="-52.8">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="584" y="-37.8">samples = 1</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="574.5" y="-22.8">value = [0, 0, 1]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="562" y="-7.8">class = Iris-virginica</text>
+</g>
+<!-- 9&#45;&gt;11 -->
+<g class="edge" id="edge11"><title>9-&gt;11</title>
+<path d="M572.544,-103.726C578.846,-94.879 585.52,-85.51 591.846,-76.6303" fill="none" stroke="black"/>
+<polygon fill="black" points="594.829,-78.4751 597.78,-68.2996 589.127,-74.4138 594.829,-78.4751" stroke="black"/>
+</g>
+<!-- 13 -->
+<g class="node" id="node14"><title>13</title>
+<path d="M765,-306C765,-306 646,-306 646,-306 640,-306 634,-300 634,-294 634,-294 634,-235 634,-235 634,-229 640,-223 646,-223 646,-223 765,-223 765,-223 771,-223 777,-229 777,-235 777,-235 777,-294 777,-294 777,-300 771,-306 765,-306" fill="#8139e5" fill-opacity="0.498039" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="642" y="-290.8">SepalWidthCm ≤ 3.1</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="658" y="-275.8">entropy = 0.918</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="668" y="-260.8">samples = 3</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="658.5" y="-245.8">value = [0, 1, 2]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="646" y="-230.8">class = Iris-virginica</text>
+</g>
+<!-- 12&#45;&gt;13 -->
+<g class="edge" id="edge13"><title>12-&gt;13</title>
+<path d="M705.5,-341.907C705.5,-333.649 705.5,-324.864 705.5,-316.302" fill="none" stroke="black"/>
+<polygon fill="black" points="709,-316.021 705.5,-306.021 702,-316.021 709,-316.021" stroke="black"/>
+</g>
+<!-- 16 -->
+<g class="node" id="node17"><title>16</title>
+<path d="M918,-298.5C918,-298.5 807,-298.5 807,-298.5 801,-298.5 795,-292.5 795,-286.5 795,-286.5 795,-242.5 795,-242.5 795,-236.5 801,-230.5 807,-230.5 807,-230.5 918,-230.5 918,-230.5 924,-230.5 930,-236.5 930,-242.5 930,-242.5 930,-286.5 930,-286.5 930,-292.5 924,-298.5 918,-298.5" fill="#8139e5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="822.5" y="-283.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="821.5" y="-268.3">samples = 22</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="812" y="-253.3">value = [0, 0, 22]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="803" y="-238.3">class = Iris-virginica</text>
+</g>
+<!-- 12&#45;&gt;16 -->
+<g class="edge" id="edge16"><title>12-&gt;16</title>
+<path d="M759.97,-341.907C776.11,-329.88 793.749,-316.735 809.776,-304.791" fill="none" stroke="black"/>
+<polygon fill="black" points="812.067,-307.449 817.994,-298.667 807.884,-301.836 812.067,-307.449" stroke="black"/>
+</g>
+<!-- 14 -->
+<g class="node" id="node15"><title>14</title>
+<path d="M761,-179.5C761,-179.5 650,-179.5 650,-179.5 644,-179.5 638,-173.5 638,-167.5 638,-167.5 638,-123.5 638,-123.5 638,-117.5 644,-111.5 650,-111.5 650,-111.5 761,-111.5 761,-111.5 767,-111.5 773,-117.5 773,-123.5 773,-123.5 773,-167.5 773,-167.5 773,-173.5 767,-179.5 761,-179.5" fill="#8139e5" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="665.5" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="668" y="-149.3">samples = 2</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="658.5" y="-134.3">value = [0, 0, 2]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="646" y="-119.3">class = Iris-virginica</text>
+</g>
+<!-- 13&#45;&gt;14 -->
+<g class="edge" id="edge14"><title>13-&gt;14</title>
+<path d="M705.5,-222.907C705.5,-212.204 705.5,-200.615 705.5,-189.776" fill="none" stroke="black"/>
+<polygon fill="black" points="709,-189.667 705.5,-179.667 702,-189.667 709,-189.667" stroke="black"/>
+</g>
+<!-- 15 -->
+<g class="node" id="node16"><title>15</title>
+<path d="M922,-179.5C922,-179.5 803,-179.5 803,-179.5 797,-179.5 791,-173.5 791,-167.5 791,-167.5 791,-123.5 791,-123.5 791,-117.5 797,-111.5 803,-111.5 803,-111.5 922,-111.5 922,-111.5 928,-111.5 934,-117.5 934,-123.5 934,-123.5 934,-167.5 934,-167.5 934,-173.5 928,-179.5 922,-179.5" fill="#39e581" stroke="black"/>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="822.5" y="-164.3">entropy = 0.0</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="825" y="-149.3">samples = 1</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="815.5" y="-134.3">value = [0, 1, 0]</text>
+<text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="799" y="-119.3">class = Iris-versicolor</text>
+</g>
+<!-- 13&#45;&gt;15 -->
+<g class="edge" id="edge15"><title>13-&gt;15</title>
+<path d="M759.97,-222.907C776.11,-210.88 793.749,-197.735 809.776,-185.791" fill="none" stroke="black"/>
+<polygon fill="black" points="812.067,-188.449 817.994,-179.667 807.884,-182.836 812.067,-188.449" stroke="black"/>
+</g>
+</g>
+</svg>
